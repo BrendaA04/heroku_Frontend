@@ -1,6 +1,6 @@
 function getAll() {
     var request = new XMLHttpRequest;
-    request.open('GET', "http://localhost:8000/contactos/");
+    request.open('GET', "https://herok-backend-5411ebb815f5.herokuapp.com/contactos/");
     request.send();
 
    
