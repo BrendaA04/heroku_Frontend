@@ -24,7 +24,7 @@ function actualizar() {
     const params = new URLSearchParams(window.location.search);
     const email = params.get("email");
 
-    fetch(`http://localhost:8000/contactos/${encodeURIComponent(email)}`, {
+    fetch(`https://herok-backend-5411ebb815f5.herokuapp.com/${encodeURIComponent(email)}`, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json',
