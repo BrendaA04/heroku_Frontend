@@ -2,7 +2,7 @@ function buscarporEmail() {
     const emailInput = document.getElementById("buscarEmail").value;
     const request = new XMLHttpRequest();
 
-    request.open('GET', `http://localhost:8000/contactos/${emailInput}`);
+    request.open('GET', `https://herok-backend-5411ebb815f5.herokuapp.com/${emailInput}`);
     request.send();
 
     request.onload = (e) => {
