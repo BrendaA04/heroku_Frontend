@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const nombreInput = document.getElementById("nombre");
     const telefonoInput = document.getElementById("telefono");
 
-    fetch(`https://herok-backend-5411ebb815f5.herokuapp.com/${encodeURIComponent(email)}`)
+    fetch(`https://herok-backend-5411ebb815f5.herokuapp.com/contactos/${encodeURIComponent(email)}`)
         .then(response => response.json())
         .then(data => {
             emailInput.value = data.email;
