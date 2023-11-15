@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const params = new URLSearchParams(window.location.search);
     const email = params.get("email");
 
-    fetch(`https://herok-backend-5411ebb815f5.herokuapp.com/${encodeURIComponent(email)}`)
+    fetch(`https://herok-backend-5411ebb815f5.herokuapp.com/contactos/${encodeURIComponent(email)}`)
         .then(response => {
             if (!response.ok) {
                 throw new Error(`Error al obtener detalles del contacto. Código de estado: ${response.status}`);
